@@ -1,0 +1,21 @@
+﻿<Window x:Class="NumberGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Number Generator" Height="400" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Lower Bound:" />
+            <TextBox x:Name="LowerBoundTextBox" />
+            <TextBlock Text="Upper Bound:" />
+            <TextBox x:Name="UpperBoundTextBox" />
+            <Button x:Name="StartButton" Click="StartButton_Click" Content="Start Generating" />
+            <Button x:Name="StopPrimesButton" Click="StopPrimesButton_Click" Content="Stop Primes" IsEnabled="False" />
+            <Button x:Name="StopFibonacciButton" Click="StopFibonacciButton_Click" Content="Stop Fibonacci" IsEnabled="False" />
+            <Button x:Name="PauseFibonacciButton" Click="PauseFibonacciButton_Click" Content="Pause Fibonacci" IsEnabled="False" />
+            <Button x:Name="ResumeFibonacciButton" Click="ResumeFibonacciButton_Click" Content="Resume Fibonacci" IsEnabled="False" />
+            <Button x:Name="RestartButton" Click="RestartButton_Click" Content="Restart" IsEnabled="False" />
+            <TextBlock Text="Output:" Margin="0,10,0,0"/>
+            <TextBox x:Name="OutputTextBox" Height="200" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
+    </Grid>
+</Window>
